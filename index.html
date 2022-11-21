@@ -16,7 +16,7 @@
 
         <button class="btn btn-primary" @click="genera">Genera Email</button>
 
-        <ul v-for="(elem, index) in emails" v-if="working == false">
+        <ul v-for="(elem, index) in emails" v-if="emails.length == 10">
             <li class="my-3">{{ elem }}</li>
         </ul>
     </div>

@@ -23,25 +23,19 @@ var app = new Vue({
         genera() {
 
 
-
             for (i = 0; i < 10; i++) {
-
-                this.working = true;
 
 
                 axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((response) => {
 
-                    let nuovaEmail = response.data.response;
 
+                    this.emails.push(response.data.response)
 
-                    this.emails.push(nuovaEmail)
-                    
 
                 })
 
             }
 
-            this.working = false;
 
 
         }
