@@ -12,13 +12,16 @@
 
 <body>
 
-    <div id="app" class="text-center my-5">
+    <div id="app">
 
-        <button class="btn btn-primary" @click="genera">Genera Email</button>
+        <div class="text-center my-5 w-50 m-auto">
+            <button class="btn btn-primary" @click="genera">Genera Email</button>
 
-        <ul v-for="(elem, index) in emails" v-if="emails.length == 10">
-            <li class="my-3">{{ elem }}</li>
-        </ul>
+            <ol v-if=" emails.length == 10">
+                <li v-for="(elem, index) in emails" class="my-3">{{ elem }}</li>
+            </ol>
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

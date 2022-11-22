@@ -9,7 +9,6 @@ var app = new Vue({
     data: {
 
         emails: [],
-        working: false,
     },
     mounted() {
 
